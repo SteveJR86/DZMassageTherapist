@@ -1,0 +1,389 @@
+/* 
+CSS Reset from Josh W Comeau
+https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/* Main CSS */
+
+/* Fonts & Variables */
+
+@font-face {
+  font-family: 'Fjord';
+  src: url('./assets/fonts/fjordone-regular-webfont.woff') format("woff"),
+  url('./assets/fonts/fjordone-regular-webfont.woff2') format("woff2"),
+  url('./assets/fonts/FjordOne-Regular.ttf') format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./assets/fonts/lato-regular-webfont.woff') format("woff"),
+  url('./assets/fonts/lato-regular-webfont.woff2') format("woff2"),
+  url('./assets/fonts/Lato-Regular.ttf') format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('./assets/fonts/raleway-variablefont_wght-webfont.woff') format("woff"),
+  url('./assets/fonts/raleway-variablefont_wght-webfont.woff2') format("woff2"),
+  url('./assets/fonts/raleway-variablefont_wght-webfont.ttf') format("ttf");
+  font-display: swap;
+}
+
+:root {
+  --mainFontFamily: 'Lato';
+  --primaryColour: #FFFFFF;
+  --secondaryColour: #231F20;
+  --bannerText: #FFFFFF;
+  --bannerBtnText: #231F20;
+}
+
+body {
+  background-color: #E1E3E5;
+  font-family: var(--mainFontFamily), serif;
+}
+
+/* General Styling */
+
+.sectionHeading {
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--secondaryColour);
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+/* Navbar */
+
+nav {
+  margin-left: auto;
+}
+
+.navBtn {
+  border: none;
+  background: none;
+}
+
+.menuIcon {
+  fill: black;
+  height: 60px;
+  width: auto;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  top: 150px;
+  background-color: #f0f0f0;
+  z-index: 10;
+  list-style: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.menu:last-child {
+  padding-bottom: 2rem;
+}
+
+.menuHide {
+  display: none;
+}
+
+.menuShow {
+  display: block;
+}
+
+.menu li {
+  border-bottom: solid 1px black;
+  text-align: center;
+}
+
+.menuLink {
+  display: inline-block;
+  width: 100%;
+}
+
+/* Hero Image */
+
+.hero {
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+/* Text Section */
+
+.textSection {
+  padding-inline: 1.25rem;
+  padding-block: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+/* Link Bar */
+
+.linkBar {
+  background-color: var(--secondaryColour);
+  color: var(--bannerText);
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.25rem;
+}
+
+.linkBar h2 {
+  font-weight: 400;
+}
+
+.linkBarBtn {
+  border-radius: 100vh;
+  background-color: var(--primaryColour);
+  color: var(--bannerBtnText);
+  font-size: 1rem;
+  border: none;
+  flex-shrink: 0;
+  padding: 1rem;
+  height: 50%;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* Service Images
+
+.serviceImages {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.serviceImages img {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+} */
+
+/* Break Image
+
+.breakImage {
+  background-image: url("./assets/images/pexels-yan-krukau-8613313.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 200px;
+  background-color: rgba(70, 70, 70, 0.5);
+  background-blend-mode: hue;
+  aspect-ratio: 16/9;
+} */
+
+/* Profile Picture */
+
+.profilePic {
+  max-width: 75%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  align-self: center;
+  margin: 1rem;
+}
+
+/* Client Reviews */
+
+.reviews {
+  padding: 1rem;
+  margin: auto;
+}
+
+.review {
+  padding: 1rem;
+  margin-block: 1rem;
+  background: linear-gradient(135deg, var(--primaryColour), var(--secondaryColour));
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.reviewText::before, .reviewText::after {
+  content: '"';
+}
+
+.reviewName {
+  font-size: 1.125rem;
+  font-style: italic;
+}
+
+/* Form Styling */
+
+.contactForm {
+  padding: 1rem;
+  margin: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.submitBtn {
+  border-radius: 100vh;
+  background-color: var(--primaryColour);
+  font-size: 1rem;
+  border: none;
+  flex-shrink: 0;
+  padding-block: 0.5rem;
+  padding-inline: 3rem;
+  height: 50%;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.75);
+  margin-block: 1rem;
+  margin-left: auto;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--secondaryColour);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 1rem;
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.socialLinks {
+  background-color: #555555;
+  padding: 0.5rem;
+  border-radius: 50%;
+  height: 50px;
+  aspect-ratio: 1/1;
+  text-align: center;
+}
+
+.socialLinks path {
+  fill: white;
+}
+
+.credit {
+  font-size: 0.875rem;
+}
+
+.srlink {
+  font-family: 'Raleway';
+  font-weight: 700;
+}
+
+/* Media Queries */
+
+@media (min-width: 52rem) {
+  .menu {
+    position: initial;
+  }
+  
+  .menuHide, .menuShow {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .navBtn {
+    display: none;
+  }
+  
+  /* .hero {
+    height: 15rem;
+  }
+
+  .heroText {
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 18ch;
+  } */
+
+  .textSection, .reviews, .contactForm {
+    max-width: 80ch;
+  }
+
+  .serviceImages {
+    flex-direction: row;
+  }
+
+  .serviceImages img {
+    width: 45%;
+    object-fit: cover;
+
+  }
+}
