@@ -108,6 +108,18 @@ a {
   color: inherit;
 }
 
+.sr-only {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+}
+
 /* Header */
 
 header {
@@ -134,7 +146,6 @@ nav {
 }
 
 .menuIcon {
-  fill: black;
   height: 60px;
   width: auto;
 }
@@ -143,7 +154,8 @@ nav {
   position: absolute;
   right: 0;
   top: 150px;
-  background-color: #f0f0f0;
+  background-color: var(--secondaryColour);
+  color: var(--primaryColour);
   z-index: 10;
   list-style: none;
   padding: 1rem;
@@ -190,6 +202,10 @@ nav {
   margin: auto;
 }
 
+.textSection p {
+  padding-block: 0.5rem;
+}
+
 /* Link Bar */
 
 .linkBar {
@@ -207,7 +223,6 @@ nav {
 }
 
 .linkBarBtn {
-  border-radius: 100vh;
   background-color: var(--primaryColour);
   color: var(--bannerBtnText);
   font-size: 1rem;
@@ -217,6 +232,7 @@ nav {
   height: 50%;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 /* Service Images
 
 .serviceImages {
@@ -230,18 +246,17 @@ nav {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 } */
 
-/* Break Image
+/* Break Image */
 
 .breakImage {
-  background-image: url("./assets/images/pexels-yan-krukau-8613313.webp");
+  background-image: url("./assets/images/breakImage.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-position-y: 40%;
   background-size: cover;
   min-height: 200px;
-  background-color: rgba(70, 70, 70, 0.5);
-  background-blend-mode: hue;
   aspect-ratio: 16/9;
-} */
+}
 
 /* Profile Picture */
 
@@ -264,10 +279,11 @@ nav {
 .review {
   padding: 1rem;
   margin-block: 1rem;
-  background: linear-gradient(135deg, var(--primaryColour), var(--secondaryColour));
+  background: linear-gradient(135deg, var(--secondaryColour), #A1A1A1);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column-reverse;
+  color: var(--primaryColour);
 }
 
 .reviewText::before, .reviewText::after {
@@ -277,6 +293,37 @@ nav {
 .reviewName {
   font-size: 1.125rem;
   font-style: italic;
+}
+
+/* Treatments Styling */
+
+.treatmentBox {
+  background-color: #a1a1a1;
+  padding: 1rem;
+  margin-block: 1rem;
+}
+
+.treatmentName {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.treatmentImage {
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.treatmentBenefits {
+  padding-left: 30px;
+}
+
+.treatmentPriceHeading {
+  text-decoration: underline;
+}
+
+.treatmentPriceDetails div {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Form Styling */
@@ -292,8 +339,7 @@ nav {
 }
 
 .submitBtn {
-  border-radius: 100vh;
-  background-color: var(--primaryColour);
+  background-color: var(--secondaryColour);
   font-size: 1rem;
   border: none;
   flex-shrink: 0;
@@ -304,7 +350,7 @@ nav {
   margin-block: 1rem;
   margin-left: auto;
   cursor: pointer;
-  color: #ffffff;
+  color: var(--primaryColour);
 }
 
 /* Footer */
@@ -376,7 +422,7 @@ footer {
   .textSection, .reviews, .contactForm {
     max-width: 80ch;
   }
-
+/* 
   .serviceImages {
     flex-direction: row;
   }
@@ -385,5 +431,5 @@ footer {
     width: 45%;
     object-fit: cover;
 
-  }
+  } */
 }
