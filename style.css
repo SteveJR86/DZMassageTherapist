@@ -176,7 +176,7 @@ nav {
 }
 
 .menu li {
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px var(--primaryColour);
   text-align: center;
 }
 
@@ -194,7 +194,7 @@ nav {
 
 /* Text Section */
 
-.textSection {
+.textSection, .treatmentSection {
   padding-inline: 1.25rem;
   padding-block: 0.75rem;
   display: flex;
@@ -202,7 +202,7 @@ nav {
   margin: auto;
 }
 
-.textSection p {
+.textSection p, .treatmentSection p {
   padding-block: 0.5rem;
 }
 
@@ -306,6 +306,7 @@ nav {
 .treatmentName {
   font-size: 1.25rem;
   text-align: center;
+  padding-bottom: 0.5rem;
 }
 
 .treatmentImage {
@@ -364,6 +365,11 @@ footer {
   padding-block: 1rem;
 }
 
+.websiteFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .socialIcons {
   display: flex;
   flex-direction: row;
@@ -408,28 +414,28 @@ footer {
   .navBtn {
     display: none;
   }
-  
-  /* .hero {
-    height: 15rem;
-  }
-
-  .heroText {
-    font-size: 3rem;
-    line-height: 3rem;
-    width: 18ch;
-  } */
 
   .textSection, .reviews, .contactForm {
     max-width: 80ch;
   }
-/* 
-  .serviceImages {
-    flex-direction: row;
+  .treatmentSection {
+    max-width: 120ch;
   }
 
-  .serviceImages img {
-    width: 45%;
-    object-fit: cover;
+  .treatmentDetail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 
-  } */
+  .treatmentBox:nth-child(odd) .treatmentDetail > :first-child {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 4rem;
+  }
 }
