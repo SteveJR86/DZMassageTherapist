@@ -233,19 +233,6 @@ nav {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* Service Images
-
-.serviceImages {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.serviceImages img {
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-} */
-
 /* Break Image */
 
 .breakImage {
@@ -267,6 +254,13 @@ nav {
   object-fit: cover;
   align-self: center;
   margin: 1rem;
+}
+
+/* Form Styling */
+
+.formInput {
+  background-color: #A1A1A1;
+  border: none;
 }
 
 /* Client Reviews */
