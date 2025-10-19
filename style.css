@@ -148,7 +148,7 @@ a {
 
 header {
     display: flex;
-
+    justify-content: space-between;
     align-items: center;
     padding-inline: 1rem;
     background-color: var(--secondaryColour);
@@ -168,7 +168,7 @@ header {
 }
 
 .menuIcon {
-    height: 50px;
+    height: 60px;
     width: auto;
 }
 
@@ -434,7 +434,7 @@ footer {
         gap: 1rem;
     }
 
-    .navBtn {
+    .navBtn, #bookNowBtn {
         display: none;
     }
 
