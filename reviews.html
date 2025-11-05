@@ -1,111 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Home page for DZ Massage Therapist, a business that offers theraueptic and sports massage to clients across the greater london area.">
-  <title>DZ Massage Therapist</title>
-  <link rel="stylesheet" href="./style.css">
-  <script src="./script.js" defer></script>
-</head>
-<body>
-  <header>
-    <img class="logo" src="./assets/images/logo.png" alt="DZ Massage company logo" height="120" width="120" />
-    <nav>
-      <button class="navBtn" id="navBtn" aria-label="Show menu">
-        <img class="menuIcon" id="menuIcon" src="./assets/icons/bars-solid.svg" alt="" height="60" width="60"/>
-      </button>
-      <ul class="menu menuHide" id="menu">
-        <li><a class="menuLink" href="./">Home</a></li>
-        <li><a class="menuLink" href="./location.html">Location & Contact</a></li>
-        <li><a class="menuLink" href="./treatments.html">Treatments</a></li>
-        <li><a class="menuLink" href="./reviews.html">Client Reviews</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="reviews" id="reviews">
-      <h1 class="sectionHeading">Client reviews</h1>
-      <figure class="review">
-        <blockquote class="reviewText">
-          Healer! I cannot thank you enough Damian. This was the best treatment massage I have ever
-          had. Damian is very professional ,friendly and respectful. I felt super comfortable during
-          my session. The atmosphere was amazing and super relaxing.
-          I have tried a lot of different things to help with my back problems, but I can honestly
-          say that only after my treatment with Damian I do feel like there has been a change in my
-          body. There is  no pain, and I can finally stretch without feeling discomfort. He was able
-          to locate  my painful spots without me having to show it to him, which astounded me! I will
-          be back!
-        </blockquote>
-        <figcaption class="reviewName">Simona Ilieva</figcaption>
-      </figure>
-      <figure class="review">
-        <blockquote class="reviewText">
-          Damian is a fantastic sports masseur. I am a musician and he has helped me enormously. He
-          comes to you which is great and he is extremely knowledgeable and seems to just have the
-          perfect depth of touch. He is also  a really genuine engaging man. I highly recommend him.
-        </blockquote>
-        <figcaption class="reviewName">Gillian Tingay</figcaption>
-      </figure>
-      <figure class="review">
-        <blockquote class="reviewText">
-          The best massage I've had! Damian is very professional and pays attention to details. He
-          has helped me with my stiff back and sports-related injuries. I can't recommend his
-          services enough.
-        </blockquote>
-        <figcaption class="reviewName">Michal Gniewek</figcaption>
-      </figure>
-      <figure class="review">
-        <blockquote class="reviewText">
-          One of the best massages I ever had! Damian understands my complicated medical and
-          professional problems and how to deal with them. He is very respectful and sensitive, and
-          explains exactly what he is doing! Highly recommend! I feel two inches taller after a
-          treatment!
-        </blockquote>
-        <figcaption class="reviewName">Elizabeth Wilson</figcaption>
-      </figure>
-      <figure class="review">
-        <blockquote class="reviewText">
-          I had a one hour deep tissue massage with Damian, it was by far the best massage I had in
-          my life (and I had many). Damian is not only very technical, he also talks to you and tries
-          understanding your true needs, beside the obvious pain-releasing ones. Highly recommended.
-        </blockquote>
-        <figcaption class="reviewName">Stefano Cirillo</figcaption>
-      </figure>
-      <figure class="review">
-        <blockquote class="reviewText">
-          Damian is a very friendly,  professional and knowledgeable  Therapist. He helped me with my
-          back, shoulder and ankle injury. I highly  recommend not only his sport massage but also
-          cupping, kinesiology taping and trigger point therapy.  I can't recommend him enough!
-        </blockquote>
-        <figcaption class="reviewName">Edyta Anna</figcaption>
-      </figure>
-      <figure class="review">
-        <blockquote class="reviewText">
-          Damian is extremely professional, very caring and makes you feel comfortable at all times.
-          I’m looking forward to our next session. Thank you Damian 🙏
-        </blockquote>
-        <figcaption class="reviewName">Elena Riola</figcaption>
-      </figure>
-      <figure class="review">
-        <blockquote class="reviewText">
-          I am a pianist with many injuries and Damian helped my playing life immeasurably, not only
-          with his great expertise and knowledge but also with his calm, optimistic and enriching
-          presence.
-        </blockquote>
-        <figcaption class="reviewName">Kathron Sturrock</figcaption>
-      </figure>
-    </div>
-  </main>
-  <footer>
-    <div class="websiteFooter">
-      <p class="sectionHeading">DZ Massage Therapy</p>
-      <div class="socialIcons">
-        <a href="https://instagram.com/dzsportsmassage?igshid=MzNlNGNkZWQ4Mg==" aria-label="DZ Massage Therapy's instagram page"><img src="./assets/icons/instagram.svg" class="socialLinks" alt="Instagram logo"></a>
-      </div>
-    </div>
-    <p class="credit">Website created by <a class="srlink" href="mailto:steven.j.riley@gmail.com">Steve Riley Webdesigns</a></p>
-  </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Home page for DZ Massage Therapist, a business that offers theraueptic and sports massage to clients across the greater london area.">
+        <title>DZ Massage Therapist - Reviews</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="./assets/images/logo.png" alt="DZ Massage company logo" height="120" width="120" />
+            <a href="./bookings.html" id="bookNowBtn" class="linkBarBtn">Book Now</a>
+            <nav>
+                <button class="navBtn" id="navBtn" aria-label="Show menu">
+                    <img class="menuIcon" id="menuIcon" src="./assets/icons/bars-solid.svg" alt="" height="60" width="60" />
+                </button>
+                <ul class="menu menuHide" id="menu">
+                    <li><a class="menuLink" href="./">Home</a></li>
+                    <li><a class="menuLink" href="./location.html">Location & Contact</a></li>
+                    <li><a class="menuLink" href="./bookings.html">Book a Massage</a></li>
+                    <li><a class="menuLink" href="./treatments.html">Treatments</a></li>
+                    <li><a class="menuLink" href="./reviews.html">Client Reviews</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="reviews" id="reviews">
+                <h1 class="sectionHeading">Client reviews</h1>
+                <figure class="review">
+                    <blockquote class="reviewText">
+                        Healer! I cannot thank you enough Damian. This was the best treatment massage I have ever
+                        had. Damian is very professional ,friendly and respectful. I felt super comfortable during
+                        my session. The atmosphere was amazing and super relaxing.
+                        I have tried a lot of different things to help with my back problems, but I can honestly
+                        say that only after my treatment with Damian I do feel like there has been a change in my
+                        body. There is no pain, and I can finally stretch without feeling discomfort. He was able
+                        to locate my painful spots without me having to show it to him, which astounded me! I will
+                        be back!
+                    </blockquote>
+                    <figcaption class="reviewName">Simona Ilieva</figcaption>
+                </figure>
+                <figure class="review">
+                    <blockquote class="reviewText">
+                        Damian is a fantastic sports masseur. I am a musician and he has helped me enormously. He
+                        comes to you which is great and he is extremely knowledgeable and seems to just have the
+                        perfect depth of touch. He is also a really genuine engaging man. I highly recommend him.
+                    </blockquote>
+                    <figcaption class="reviewName">Gillian Tingay</figcaption>
+                </figure>
+                <figure class="review">
+                    <blockquote class="reviewText">
+                        The best massage I've had! Damian is very professional and pays attention to details. He
+                        has helped me with my stiff back and sports-related injuries. I can't recommend his
+                        services enough.
+                    </blockquote>
+                    <figcaption class="reviewName">Michal Gniewek</figcaption>
+                </figure>
+                <figure class="review">
+                    <blockquote class="reviewText">
+                        One of the best massages I ever had! Damian understands my complicated medical and
+                        professional problems and how to deal with them. He is very respectful and sensitive, and
+                        explains exactly what he is doing! Highly recommend! I feel two inches taller after a
+                        treatment!
+                    </blockquote>
+                    <figcaption class="reviewName">Elizabeth Wilson</figcaption>
+                </figure>
+                <figure class="review">
+                    <blockquote class="reviewText">
+                        I had a one hour deep tissue massage with Damian, it was by far the best massage I had in
+                        my life (and I had many). Damian is not only very technical, he also talks to you and tries
+                        understanding your true needs, beside the obvious pain-releasing ones. Highly recommended.
+                    </blockquote>
+                    <figcaption class="reviewName">Stefano Cirillo</figcaption>
+                </figure>
+                <figure class="review">
+                    <blockquote class="reviewText">
+                        Damian is a very friendly, professional and knowledgeable Therapist. He helped me with my
+                        back, shoulder and ankle injury. I highly recommend not only his sport massage but also
+                        cupping, kinesiology taping and trigger point therapy. I can't recommend him enough!
+                    </blockquote>
+                    <figcaption class="reviewName">Edyta Anna</figcaption>
+                </figure>
+                <figure class="review">
+                    <blockquote class="reviewText">
+                        Damian is extremely professional, very caring and makes you feel comfortable at all times.
+                        I’m looking forward to our next session. Thank you Damian 🙏
+                    </blockquote>
+                    <figcaption class="reviewName">Elena Riola</figcaption>
+                </figure>
+                <figure class="review">
+                    <blockquote class="reviewText">
+                        I am a pianist with many injuries and Damian helped my playing life immeasurably, not only
+                        with his great expertise and knowledge but also with his calm, optimistic and enriching
+                        presence.
+                    </blockquote>
+                    <figcaption class="reviewName">Kathron Sturrock</figcaption>
+                </figure>
+            </div>
+        </main>
+        <footer>
+            <div class="websiteFooter">
+                <p class="sectionHeading">DZ Massage Therapy</p>
+                <div class="socialIcons">
+                    <a href="https://instagram.com/dzsportsmassage?igshid=MzNlNGNkZWQ4Mg==" aria-label="DZ Massage Therapy's instagram page">
+                        <img src="./assets/icons/instagram.svg" class="socialLinks" alt="Instagram logo">
+                    </a>
+                </div>
+            </div>
+            <p class="credit">Website created by <a class="srlink" href="mailto:steven.j.riley@gmail.com">Steve Riley Webdesigns</a></p>
+        </footer>
+    </body>
 </html>
