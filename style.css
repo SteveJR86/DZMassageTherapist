@@ -282,11 +282,11 @@ header {
     margin: 1rem;
 }
 
-/* Form Styling */
+/* Location Picture */
 
-.formInput {
-    background-color: #A1A1A1;
-    border: none;
+.locationPic {
+    min-height: 300px;
+    object-fit: cover;
 }
 
 /* Client Reviews */
@@ -349,6 +349,11 @@ header {
 }
 
 /* Form Styling */
+
+.formInput {
+    background-color: #A1A1A1;
+    border: none;
+}
 
 .contactForm {
     padding: 1rem;
